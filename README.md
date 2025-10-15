@@ -11,7 +11,7 @@ It demonstrates clean Go code, HTTP handling, and JSON responses — perfect for
 - Exposes a simple `/me` endpoint returning user info and a cat fact
 - Uses Go’s native `net/http` package
 - Includes timeout handling and JSON formatting
-- Lightweight and deployment-ready (e.g., Railway, Render, etc.)
+- Lightweight and deployment-ready (e.g., PXXL app, etc.)
 
 ---
 
@@ -32,8 +32,7 @@ go build
 ```
 
 ### 3. Run the Api
-``` ./mycatfact 
-```
+``` ./mycatfact ```
 ### 4. Test Endpoint
 ``` curl http://localhost:8080/me ```
 ## You should see a json response similar to
