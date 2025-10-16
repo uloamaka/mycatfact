@@ -16,7 +16,7 @@ type profile struct {
 	Status    string `json:"status"`
 	User      user   `json:"user"`
 	Timestamp string `json:"timestamp"`
-	Facts     string `json:"facts"`
+	Fact     string `json:"fact"`
 }
 
 type user struct {
@@ -55,7 +55,7 @@ func getProfile(w http.ResponseWriter, r *http.Request) {
 			Stack: "Go/Gin",
 		},
 		Timestamp: time.Now().UTC().Truncate(time.Millisecond).Format("2006-01-02T15:04:05.000Z"),
-		Facts:     respData.Fact,
+		Fact:     respData.Fact,
 	}
 
 	w.Header().Set("Content-Type", "application/json")
